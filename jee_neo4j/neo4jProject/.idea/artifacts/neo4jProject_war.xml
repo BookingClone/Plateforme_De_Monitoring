@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="neo4jProject:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>neo4jProject</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="neo4jProject-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="neo4jProject:war exploded" />
+    </root>
+  </artifact>
+</component>
