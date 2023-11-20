@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:a="http://java.sun.com/jsf/core">
+<head>
+    <meta charset="UTF-8"/>
+    <title>CodePen - Glassmorphism Login</title>
+    <link rel="stylesheet" href="./login.css"/>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section class="container">
+    <div class="login-container">
+        <div class="circle circle-one"></div>
+        <div class="form-container">
+            <img src="https://raw.githubusercontent.com/hicodersofficial/glassmorphism-login-form/master/assets/illustration.png" alt="illustration" class="illustration" />
+            <h1 class="opacity">LOGIN</h1>
+            <h:form>
+                <div class="input-box">
+                    <div class="input-field">
+                        <h:inputText id="email" styleClass="input" required="true" autocomplete="on" value="#{loginBean.user.email}"/>
+                    </div>
+                    <div class="input-field">
+                        <h:inputSecret id="password" styleClass="input" required="true" value="#{loginBean.user.password}"/>
+                    </div>
+                    <div class="opacity">
+                        <h:commandButton type="submit" styleClass="submit" value="SignIn" action="#{loginBean.login}"/>
+                    </div>
+                </div>
+            </h:form>
+            <div class="register-forget opacity">
+                <a href="registre.xhtml">REGISTER</a>
+            </div>
+        </div>
+        <div class="circle circle-two"></div>
+    </div>
+    <div class="theme-btn-container"></div>
+</section>
+
+<script  src="./script.js"></script>
+
+</body>
+</html>
