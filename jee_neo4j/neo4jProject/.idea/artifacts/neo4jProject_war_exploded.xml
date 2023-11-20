@@ -1,0 +1,44 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="neo4jProject:war exploded">
+    <output-path>$PROJECT_DIR$/target/neo4jProject-1.0-SNAPSHOT</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>neo4jProject</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="neo4jProject" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: jakarta.mvc:jakarta.mvc-api:2.0.0" />
+          <element id="library" level="project" name="Maven: org.neo4j.driver:neo4j-java-driver:5.10.0" />
+          <element id="library" level="project" name="Maven: org.reactivestreams:reactive-streams:1.0.4" />
+          <element id="library" level="project" name="Maven: io.netty:netty-handler:4.1.94.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-common:4.1.94.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-resolver:4.1.94.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-buffer:4.1.94.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-transport:4.1.94.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-transport-native-unix-common:4.1.94.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-codec:4.1.94.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-tcnative-classes:2.0.61.Final" />
+          <element id="library" level="project" name="Maven: io.projectreactor:reactor-core:3.5.7" />
+          <element id="library" level="project" name="Maven: org.mongodb:mongodb-driver-sync:4.10.2" />
+          <element id="library" level="project" name="Maven: org.mongodb:bson:4.10.2" />
+          <element id="library" level="project" name="Maven: org.mongodb:mongodb-driver-legacy:4.10.2" />
+          <element id="library" level="project" name="Maven: org.mongodb:mongodb-driver-core:4.10.2" />
+          <element id="library" level="project" name="Maven: org.mongodb:bson-record-codec:4.10.2" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.12.0" />
+          <element id="library" level="project" name="Maven: org.ow2.asm:asm:9.4" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/neo4jProject-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="neo4jProject/web/Web" />
+    </root>
+  </artifact>
+</component>

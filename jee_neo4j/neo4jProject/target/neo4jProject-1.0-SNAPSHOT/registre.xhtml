@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Form Validation in HTML | CodingNepal</title>
+    <link rel="stylesheet" href="registre.css"/>
+    <!-- Fontawesome CDN Link For Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+<body>
+<h:form>
+    <h2>Registre</h2>
+    <!-- Prénom -->
+    <div class="form-group firstname">
+        <h:outputLabel for="firstName" styleClass="input-label">Prénom :</h:outputLabel>
+        <h:inputText id="firstName" value="#{registerBean.user.firstName}" required="true" styleClass="form-control" />
+    </div>
+
+    <!-- Nom -->
+    <div class="form-group lastname">
+        <h:outputLabel for="lastName" styleClass="input-label">Nom :</h:outputLabel>
+        <h:inputText id="lastName" value="#{registerBean.user.lastName}" required="true" styleClass="form-control" />
+    </div>
+
+    <!-- Email -->
+    <div class="form-group email">
+        <h:outputLabel for="email" styleClass="input-label">Email :</h:outputLabel>
+        <h:inputText id="email" value="#{registerBean.user.email}" required="true" styleClass="form-control" />
+    </div>
+
+    <!-- Mot de passe -->
+    <div class="form-group password">
+        <h:outputLabel for="password" styleClass="input-label">Mot de passe :</h:outputLabel>
+        <h:inputSecret id="password" value="#{registerBean.user.password}" required="true" styleClass="form-control" />
+    </div>
+
+    <h:commandButton value="S'inscrire" action="#{registerBean.register}" styleClass="form-group submit-btn" />
+</h:form>
+<script src="script1.js"></script>
+</body>
+</html>
